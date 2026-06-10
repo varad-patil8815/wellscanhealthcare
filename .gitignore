@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env
+venv/
+env/
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+*.log
+
+# Model weights (too large for GitHub — use Git LFS or Google Drive)
+*.hdf5
+*.h5
+*.pb
+*.ckpt
+
+# Uploads (runtime generated files)
+backend/static/uploads/*.jpg
+backend/static/uploads/*.jpeg
+backend/static/uploads/*.png
+!backend/static/uploads/.gitkeep
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+*.env
+.env.local
+config.local.js
