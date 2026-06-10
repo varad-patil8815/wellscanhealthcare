@@ -242,9 +242,8 @@ wellscanhealthcare/
  
 ## 📚 Dataset
  
-- **Segmentation:** Brain Tumor.npy by AWSAF — [Kaggle](https://www.kaggle.com/)
-- **Classification:** Brain Tumor Classification Dataset — [Kaggle](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset)
-- 3,727 MRI scans with corresponding tumor masks
+- **Classification:** [Brain Tumor MRI Dataset by Masoud Nickparvar](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset) — 7,023 MRI images, 4 classes
+- **Segmentation:** [Brain Tumor .npy by AWSAF](https://www.kaggle.com/datasets/awsaf49/brain-tumor) — segmentation masks
 ---
 
 ## 📄 License
@@ -252,6 +251,3 @@ wellscanhealthcare/
 MIT License — free to use for academic and personal projects.
 
 
-## 📄 License
-
-MIT License — free to use for academic and personal projects.
