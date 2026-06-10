@@ -111,7 +111,7 @@ A custom **AttentionResUNet with Classifier** — combines U-Net segmentation ar
 **AI/ML:** Python 3.11 · TensorFlow 2.15 · Keras · OpenCV · NumPy · SciPy · Matplotlib · Flask  
 **Backend:** Node.js · Express.js · MongoDB · Mongoose  
 **Frontend:** Next.js · HTML · CSS · JavaScript  
-**Blockchain:** Ethereum (Sepolia Testnet) · Solidity · Web3.js · MetaMask · Infura  
+**Blockchain:** Ethereum (Sepolia Testnet) · Solidity · Web3.js · MetaMask
  
 ---
 
