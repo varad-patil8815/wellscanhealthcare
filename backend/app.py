@@ -8,13 +8,23 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 from scipy.ndimage.measurements import label
 from flask_cors import CORS
+from huggingface_hub import hf_hub_download
 
 #  Configuration 
 threshold   = 0.30
 image_size  = 224
 class_labels = ['meningioma', 'glioma', 'pituitary tumor', 'noTumor']
-MODEL_PATH  = os.environ.get('MODEL_PATH', 'AT_RESu_net_all_STD_0.0927_th=0.38.hdf5')
+#MODEL_PATH  = os.environ.get('MODEL_PATH', 'AT_RESu_net_all_STD_0.0927_th=0.38.hdf5')
 FRONTEND_PORT = os.environ.get('FRONTEND_PORT', '3000')
+
+
+MODEL_PATH = os.environ.get(
+    'MODEL_PATH',
+    hf_hub_download(
+        repo_id="VaradPatil8815/wellscanhealthcare-brain-tumor",
+        filename="AT_RESu_net_all_STD_0.0927_th=0.38.hdf5"
+    )
+)
 
 #  Custom metrics 
 def mean_iou(y_true, y_pred):
