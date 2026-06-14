@@ -124,51 +124,30 @@ A custom **AttentionResUNet with Classifier** — combines U-Net segmentation ar
 - MongoDB (running locally)
 - MetaMask browser extension (connected to Sepolia testnet)
 - Model weights file: `AT_RESu_net_all_STD_0.0927_th=0.38.hdf5`
-  *(Too large for GitHub — [Download from Google Drive](YOUR_DRIVE_LINK_HERE))*
+  *🤗 [VaradPatil8815/wellscanhealthcare-brain-tumor](https://huggingface.co/VaradPatil8815/wellscanhealthcare-brain-tumor/resolve/main/AT_RESu_net_all_STD_0.0927_th%3D0.38.hdf5)*
 ---
  
 ### 1️⃣ AI Backend — Flask (Port 5000)
  
-```bash
+Open a new PowerShell window:
+ 
+```powershell
 cd backend
-python -m venv venv
- 
-# Windows:
+py -3.11 -m venv venv
 venv\Scripts\activate
-# Mac/Linux:
-source venv/bin/activate
- 
 pip install -r requirements.txt
- 
-# Place the .hdf5 model file inside backend/ folder, then:
-# Windows:
-set MODEL_PATH=AT_RESu_net_all_STD_0.0927_th=0.38.hdf5 && python app.py
-# Mac/Linux:
-MODEL_PATH=AT_RESu_net_all_STD_0.0927_th=0.38.hdf5 python app.py
+python app.py
 ```
  
 ✅ Wait for: `Running on http://0.0.0.0:5000`
- 
-**Test the API:**
-```bash
-curl -X POST http://localhost:5000/predict \
-  -F "file=@docs/screenshots/sample_mri_input.jpg"
-```
- 
-Expected response:
-```json
-{
-  "prediction": "glioma 97.43%",
-  "original_img": "/static/uploads/bbox_sample_mri_input.jpg",
-  "segmented_img": "/static/uploads/segmented_sample_mri_input.jpg"
-}
-```
  
 ---
  
 ### 2️⃣ Node Auth Server — Express (Port 8080)
  
-```bash
+Open a new PowerShell window:
+ 
+```powershell
 cd server
 npm install
 node index.js
@@ -176,7 +155,7 @@ node index.js
  
 ✅ Wait for: `server started` and `db connected`
  
-> Make sure MongoDB is running before this step (`mongod` in a separate terminal if not running as a service)
+> MongoDB must be running before this step. If installed as a service it starts automatically. Otherwise run `mongod` in a separate PowerShell window first.
  
 ---
  
