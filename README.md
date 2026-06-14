@@ -123,8 +123,8 @@ A custom **AttentionResUNet with Classifier** — combines U-Net segmentation ar
 - Node.js 18+
 - MongoDB (running locally)
 - MetaMask browser extension (connected to Sepolia testnet)
-- Model weights file: `AT_RESu_net_all_STD_0.0927_th=0.38.hdf5`
-  *🤗 [VaradPatil8815/wellscanhealthcare-brain-tumor](https://huggingface.co/VaradPatil8815/wellscanhealthcare-brain-tumor/resolve/main/AT_RESu_net_all_STD_0.0927_th%3D0.38.hdf5)*
+- Model weights are **automatically downloaded from Hugging Face** on first run — no manual download needed
+  🤗 [VaradPatil8815/wellscanhealthcare-brain-tumor](https://huggingface.co/VaradPatil8815/wellscanhealthcare-brain-tumor)
 ---
  
 ### 1️⃣ AI Backend — Flask (Port 5000)
