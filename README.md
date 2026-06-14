@@ -160,22 +160,17 @@ node index.js
 ---
  
 ### 3️⃣ Blockchain Frontend — Next.js (Port 3000)
- 
-```bash
+
+Open a new PowerShell window:
+
+```powershell
 cd blockchain
 npm install --legacy-peer-deps
- 
-# First time only — deploy smart contract:
-cd ethereum
-node compile.js
-node deploy.js
-# Copy the deployed contract address from output → paste into your web3 config
- 
-cd ..
 npm run dev
 ```
- 
+
 ✅ Open browser → [http://localhost:3000](http://localhost:3000)
+
  
 > Make sure MetaMask is installed and connected to **Sepolia Test Network**
  
