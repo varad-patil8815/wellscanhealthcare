@@ -13,6 +13,10 @@ node_modules/
 .next/
 dist/
 build/
+
+!blockchain/ethereum/build/
+!blockchain/ethereum/build/**
+
 *.log
 
 # Model weights (too large for GitHub — use Git LFS or Google Drive)
