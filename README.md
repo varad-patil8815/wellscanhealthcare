@@ -161,6 +161,32 @@ node index.js
  
 ### 3️⃣ Blockchain Frontend — Next.js (Port 3000)
 
+> **Recommended:** Node.js 18 LTS (v18.20.x)
+>
+> This blockchain frontend uses legacy Ethereum and Next.js dependencies (`web3`, `next-routes`, `semantic-ui-react`) and may not work correctly on newer Node.js versions (20+ or 24+).
+
+If Node.js 18 is not installed, install **NVM (Node Version Manager)**:
+
+🔗 https://github.com/coreybutler/nvm-windows/releases
+
+Download and run:
+
+```text
+nvm-setup.exe
+```
+
+```powershell
+nvm install 18.20.8
+nvm use 18.20.8
+node -v
+```
+
+Expected output:
+
+```text
+v18.20.8
+```
+
 Open a new PowerShell window:
 
 ```powershell
